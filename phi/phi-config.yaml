@@ -1,0 +1,13 @@
+name: data
+
+docker:
+  enabled: False
+  network: phi-local
+  apps:
+    devbox:
+      type: devbox
+    airflow:
+      type: airflow
+      args:
+        WS_ENABLED: True
+        DB_ENABLED: True

@@ -1,0 +1,9 @@
+# Ignore Production K8s manifests for this workspaces because they
+# may contain secrets which we don't want on version control
+prd
+
+# Confidential keys are stored under the keys directory
+# We should NEVER check them into version control
+# If you are using another folder to store your keys
+# please double-check incase you accidentally check them into version control
+keys
